@@ -26,6 +26,9 @@ class Heroe extends Personaje {
             this.nivel++
             this.vida = Math.floor(this.vida * 1.5)
             this.ataque = Math.floor(this.ataque * 1.15)
+            $('.heroe #experiencia').html(this.experiencia)
+            $('.heroe #nivel').html(this.nivel)
+            $('.heroe #vida').html(this.vida + '/' + this.vida)
         }
     }
 
